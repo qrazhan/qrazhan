@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Prashan Dharmasena'
 SITENAME = u'qrazhan'
-#SITEURL = 'http://localhost:8000'
-SITEURL = 'http://1c07dfa8.ngrok.com'
+SITEURL = 'http://qrazhan.com'
+#SITEURL = 'http://1c07dfa8.ngrok.com'
 
 TIMEZONE = 'US/Eastern'
 
@@ -18,15 +18,8 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-# Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+MENUITEMS =  [("Archives", SITEURL+"/archives.html")]
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
 

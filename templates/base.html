@@ -5,6 +5,7 @@
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
 	<link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css"/>
 	<link href="http://fonts.googleapis.com/css?family=Monda:400,700" rel="stylesheet" type="text/css"/>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css"/>
 	<link href="{{SITEURL}}/theme/style.css" rel="stylesheet" type="text/css"/>
         <meta charset="utf-8" />
         {% if FEED_ALL_ATOM %}
@@ -41,22 +42,19 @@
 	</header></a>
         <!-- /#banner -->
         <nav id="menu"><ul>
-        {% for title, link in MENUITEMS %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
+
         {% if DISPLAY_PAGES_ON_MENU %}
           {% for p in PAGES %}
             <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
           {% endfor %}
 	{% endif %}
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
         </ul></nav><!-- /#menu -->
 	</div>
         {% block content %}
         {% endblock %}
-        <footer id="contentinfo">
-                <address id="about" class="vcard body">
-                Powered by <a href="http://getpelican.com/">Pelican</a>
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+
 </body>
 </html>
