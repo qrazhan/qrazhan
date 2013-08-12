@@ -53,10 +53,18 @@ ul {
 .entry-content h2 {
   text-shadow: 1px 1px 2px #cdcdcd;
   font-family: "Monda";
+  font-size: 20px;
+}
+.entry-content dl,
+.entry-content ul,
+.entry-content p {
+  line-spacing: 24px;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 .entry-title {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Monda";
   margin-bottom: -10px;
   padding-left: 10px;
