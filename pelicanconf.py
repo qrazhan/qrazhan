@@ -5,7 +5,6 @@ from __future__ import unicode_literals
 AUTHOR = u'Prashan Dharmasena'
 SITENAME = u'qrazhan'
 SITEURL = 'http://qrazhan.com'
-#SITEURL = 'http://1c07dfa8.ngrok.com'
 
 TIMEZONE = 'US/Eastern'
 
